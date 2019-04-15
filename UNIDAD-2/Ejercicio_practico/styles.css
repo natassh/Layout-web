@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,800");
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
+
+:root {
+    --bg-color: #ffed02;
+    --second-bg-color: #44a860;
+    --second-font-color: #fff;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +13,7 @@
 }
 header {
     padding: 2rem 2rem;
-    background-color: #ffed02;
+    background-color: var(--bg-color);
     text-align: center;
     margin-bottom: 1.5rem
 }
@@ -21,7 +27,7 @@ h1, h2 {
     font-weight: 600;
 }
 h1 {
-    color: #fff;
+    color: var(--second-font-color);
     font: 7rem "EB Garamond", serif;
 }
 h2 {
@@ -32,17 +38,17 @@ h2 {
 h1 strong {
     display: inline-block;
     font: 7rem "EB Garamond", serif;
-    background-color: #44a860;
-    color: #fff;
+    background-color: var(--second-bg-color);
+    color: var(--second-font-color);;
     padding: 1rem;
-    border: 0.2rem solid #fff;
+    border: 0.2rem solid var(--second-font-color);;
     font-weight: 600;
     position: relative;
 }
 h1 strong:before {
     display: block;
     content: "132.91";
-    color: #fff;
+    color: var(--second-font-color);;
     font: 1.4rem "Raleway", serif;
     font-style: normal;
     font-weight: 300;
@@ -53,7 +59,7 @@ h1 strong:before {
 h1 strong:after {
     display: block;
     content: "55";
-    color: #fff;
+    color: var(--second-font-color);;
     font: 1.3rem "Raleway", serif;
     font-style: normal;
     font-weight: 300;
@@ -73,7 +79,7 @@ p {
 }
 .figure1 {
     max-width: 28rem;
-    background: #ffed02;
+    background: var(--bg-color);
     float: left;
     margin-left: -6rem;
     margin-right: 1em;
@@ -94,7 +100,7 @@ p {
 
 .figure2 {
     max-width: 28rem;
-    background: #44a860;
+    background: var(--second-bg-color);
     float: right;
     margin-right: -6em;
     -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
@@ -117,8 +123,8 @@ footer {
 }
 footer a {
     font: 1.4rem "EB Garamond", serif;
-    color: #fff;
+    color: var(--second-font-color);;
 }
 footer a:hover {
-    color:#ffed02;
+    color:var(--bg-color);
 }
