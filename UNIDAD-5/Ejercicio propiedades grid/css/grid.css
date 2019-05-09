@@ -1,0 +1,36 @@
+:root {
+  --gap: 20px;
+  --cols12: repeat(12, minmax(0, 1fr));
+  --cols6: repeat(6, minmax(0, 1fr));
+}
+.contenedor {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: var(--cols12);
+  grid-gap: var(--gap);
+}
+
+.elemento {
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  color: #004e92;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+.elm5 {
+  grid-column: span 3;
+}
+.elm15 {
+  grid-column: span 6;
+}
+.elm15 {
+  display: grid;
+  grid-column: span 6;
+  grid-template-columns: var(--cols6);
+  padding:0;
+  grid-gap: var(--gap);
+}
