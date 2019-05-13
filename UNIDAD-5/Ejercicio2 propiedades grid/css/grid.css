@@ -1,6 +1,6 @@
 :root {
   --gap: 20px;
-  --cols: 1fr 5rem minmax(0, 50rem) 5rem 1fr;
+  --cols: 1fr 5rem minmax(0, 57rem) 5rem 1fr;
 }
 body {
   display: grid;
@@ -48,24 +48,46 @@ body {
   font-weight: 600;
   font-size: 115%;
   line-height: 1.7;
-  color: #004e92;
+  color: #1d1d1f;
   text-align: justify;
   hyphens: auto;
   margin: 20px 0;
+  text-align: center;
 }
 .articulo__cuerpo {
   grid-column: 3 / -3;
 }
-.imagen {
+.articulo__cuerpo p {
+  margin-bottom: 1.5rem;
+}
+.articulo__cuerpo .imagen {
   grid-column: 1 / -1;
-  margin-bottom: 20px;
 }
-.imagen img {
-  display: block;
-  width: 100%;
-}
-
 footer {
   grid-column: 1 / -1;
-  background-color: #587339;
+  background-color: #173887;
+  color: #fff;
+}
+@media (max-width: 425px) {
+  .cabecera {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .cabecera__bloque1 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .cabecera__bloque2 {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+  :root {
+    --cols: 1fr 3rem minmax(0, 57rem) 3rem 1fr;
+  }
 }
